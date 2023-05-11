@@ -1,5 +1,47 @@
 <!DOCTYPE html>
+<style>
+html{
+  background-color: black;
+  color: #fff;
+  margin: 20px;
+}
+table {
+  border-collapse: collapse;
+  border-color: #aaa;
+  text-align: center;
+  margin:auto;
+}
+table th, table td {
+  border: solid 1px #aaa;
+  /*実線 1px 黒*/
+}
+th {
+  font-size: 14pt;
+}
+td {
+  padding: 8px;
+  font-size: 20pt;
+}
+.last-month, .next-month {
+  color: #888;
+
+}
+#time {
+  font-size: 40pt;
+  text-align: center;
+  line-height: 1em;
+}
+#date {
+  font-size: 16pt;
+  text-align: center;
+  line-height: 1.4em;
+}
+</style>
 <body>
-  <div id="app"></div>
-  <script src="./main.js"></script>
+  <div id="app">
+    <div id="time"></div>
+    <div id="date"></div>
+    <div id="calendar" />
+  </div>
+  <script type="module" src="./js/main.mjs"></script>
 </body>
